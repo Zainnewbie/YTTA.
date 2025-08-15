@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary Sayang 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="floaters"></div>
+
+  <div class="card">
+    <h1 class="title">Happy Anniversary Sayaanggg 🩵</h1>
+    <div class="emoji-line">🐼 💌 🐬 💕 🐼 💌 🐬</div>
+    <div class="scroll-box">
+      <p id="message" class="message"></p>
+    </div>
+    <div class="scroll-nav">
+      <button onclick="scrollUp()">⬆ Atas</button>
+      <button onclick="scrollDown()">⬇ Bawah</button>
+    </div>
+    <div class="emoji-line">💙 🎈 💕 🐼 🐬 💌 💙</div>
+    <button class="love-button" onclick="spawnHearts()">I LOVE YOU 💖</button>
+  </div>
+
+  <audio id="bgm" src="audio.mp3" loop playsinline></audio>
+  <div id="audio-cta" class="audio-cta hidden">
+    <button id="play-btn">Putar Musik 🎵</button>
+    <small>Jika musik tidak otomatis, klik tombol ini.</small>
+  </div>
+
+  <script>
+    window.APP_CONFIG = {
+      messageText: `Eluuu bibubb acuu yangg maniss.. Happy Anniversary sayaanggg🩵 ga kerasa yaa udah 1 tahun aja.. banya yg udah kita lewati.. mau itu halangan, rintangann, nikmat.. apapunnn itu kita berhasil kita lewati sama" dalam suka mauoun duka.. ga kebayangg kan brapa kata maaf udah terlontar.. brapa kata terimakasih udah terucap.. brapa kata putus udah tersampaikan.. tapi kita berhasil melalui itu semua sampai detik ini.. i'm proud of you sayaang.. makasih udah mau temani abg sampai ke titik ini.. udah mau dukung abg sampai sekarang.. udah mau bersama hingga detik ini.. makasih banya sayaang.. abg udah belajar banya dari adek.. banya hal.. makasih banya sekali lagi.. abg juga minta maaf.. abg tau abg blom menjadi pasangan yang sempurna.. pasangan yang perfect.. masih belum bisa treat adek layaknya ratu.. sifat abg yang masih kekanak kanakan.. bahkan mngkn adek ga nyaman sama abg.. masih perlu dikode"in.. gapahamm.. gapunya banya uangg.. abg minta maaf yaa sayaang belum bisa menjadi apa yang adek mau.. abg doakan segala mimpi adek tercapai semua, segala urusan adek dipermudah, disayang sama keluarga, bisa jadi orng yang bermafaat kedepannya, apa yang adek mau terkabulkan semua, mendapat yang terbaik.. Oyaa semangatt yaa sayaang belajar nya, semangatt TO dan ujiannya sayaang, abg doakan adek lulus STMKG aminn.. jaga ibadah, jaga solat, perbanya sedekah dan puasa.. jaga diri dan jaga kesehatan sayaang.. ingat selalu pesan abg yaa.. jangan begadang, jaga makan, perbangak air putih, jangan kecapean.. teyyy Lopyuu polebell sayaanggg, micyuu even in different universe🩵💌`
+    };
+
+    function scrollUp() {
+      document.querySelector('.scroll-box').scrollBy({ top: -80, behavior: 'smooth' });
+    }
+    function scrollDown() {
+      document.querySelector('.scroll-box').scrollBy({ top: 80, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
